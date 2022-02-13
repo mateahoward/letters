@@ -91,14 +91,7 @@ export default {
 
                 this.message = messageObj.message;
                 this.receiver = messageObj.receiver;
-            } else {
-
-                const json = Buffer.from(this.$route.path.slice(16,), 'base64').toString('utf8');
-                const messageObj = JSON.parse(json);
-
-                this.message = messageObj.message;
-                this.receiver = messageObj.receiver;
-            }
+            } 
         }
     }
 }
