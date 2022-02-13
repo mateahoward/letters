@@ -4,7 +4,7 @@ import Letter from '../views/Letter.vue'
 
 const routes = [
   {
-    path: '/letters/',
+    path: '/',
     name: 'Home',
     component: Home
   },
