@@ -25,11 +25,16 @@
                                     {{message }}
                                 </p>
                             </div>
+                            <router-link to="/" tag="button" id="createYourOwn" class="create-letter">
+                                Create your own letter
+                            </router-link>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
 
     </section>
 </template>
@@ -59,6 +64,7 @@ export default {
             var paper = document.getElementById("paper");
             var button = document.getElementById("button");
             var innerBox = document.getElementById("innerBox");
+            var newLetterButton = document.getElementById('createYourOwn')
 
             innerBox.classList.add('rotate-letter')
             triangle.classList.add('animatedTriangleDown');
@@ -81,6 +87,7 @@ export default {
                 paper.classList.remove('animatedPaper');
                 paper.classList.add('stillPaper');
                 this.shouldShowLetterDetails = true;
+                newLetterButton.classList.add('visible')
 
             }, 4000);
         },
@@ -99,6 +106,25 @@ export default {
 
 <style lang="scss" scoped>
 
+.create-letter {
+    display: none;
+}
+.create-letter.visible {
+    background: white;
+    width: 190px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a6676c;
+    font-weight: bold;
+
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px dashed #202a2e;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
 .wrapper {
     background: #f8c7ca!important;
 }
@@ -178,6 +204,7 @@ export default {
     border: 1px solid #e9989f;
     -webkit-box-shadow: 5px 5px 15px 5px #6a6a6a; 
     box-shadow: 5px 5px 15px 5px #6a6a6a;
+
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -197,12 +224,14 @@ export default {
     color: #9d5a60;
     transform: rotateY(180deg);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 
     p {
         padding: 20px;
         white-space: pre-line;
-        overflow: auto;
-        width: 100%
+        overflow-y: auto;
+        max-height: 300px;
     }
   }
 
@@ -319,6 +348,7 @@ export default {
 
 .stillPaper {
     display: flex;
+    flex-direction: column;
     width: 90%;
     margin: 0 auto;
     background-color: #fdf3f4;
