@@ -4,12 +4,12 @@ import Letter from '../views/Letter.vue'
 
 const routes = [
   {
-    path: '/letters/',
+    path: '/',
     name: 'Home',
     component: Home,
   },
   {
-    path: '/letters/letter/:letterDetails',
+    path: '/letter/:letterDetails',
     name: 'Letter',
     component: Letter,
     props: { default: true }
