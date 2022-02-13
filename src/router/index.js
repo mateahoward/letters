@@ -12,7 +12,7 @@ const routes = [
     path: '/letter/:letterDetails',
     name: 'Letter',
     component: Letter,
-    props: { default: true }
+    props: true
   },
 ]
 
