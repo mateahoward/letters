@@ -1,0 +1,40 @@
+{
+    "languages": {
+
+        "english": {
+            "LabelPerson": "Who would you like to send a letter to?",
+            "PersonInputPlaceholderText" : "Please type their name here...",
+            "LabelMessage": "What message would you like to display?",
+            "MessageInputPlaceholderText" : "Your message...",
+            "FormButtonText" : "Save message and view the letter",
+
+            "instructionsTitle": "How it works:" ,
+            "instruction1": "Choose the languge",
+            "instruction2": "Write the letter",
+            "instruction3": "Click the button",
+            "instruction4": "Copy the URL and share with your loved one",
+            "letterOpenText": "Open",
+
+            "closeInstructionsText": "close"
+
+        },
+
+        "croatian": {
+            "LabelPerson": "Kome biste željeli poslati pismo?",
+            "PersonInputPlaceholderText" : "Unesite njihovo ime ovdje...",
+            "LabelMessage": "Koju poruku želite da prikažemo?",
+            "MessageInputPlaceholderText" : "Vasa poruka...",
+            "FormButtonText" : "Spremi poruku i pogledaj pismo",
+
+            "instructionsTitle": "Kako koristiti:" ,
+            "instruction1": "Izaberite vas jezik",
+            "instruction2": "Napisite pismo",
+            "instruction3": "Kliknite gumb",
+            "instruction4": "Kopirajte URL i podijelite sa svojim voljenima",
+
+            "letterOpenText": "Otvori",
+            "closeInstructionsText": "Zatvori"
+        }
+
+    }
+}
