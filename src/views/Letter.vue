@@ -91,6 +91,13 @@ export default {
 
                 this.message = messageObj.message;
                 this.receiver = messageObj.receiver;
+            } else {
+
+                const json = Buffer.from(this.$route.path.slice(16,), 'base64').toString('utf8');
+                const messageObj = JSON.parse(json);
+
+                this.message = messageObj.message;
+                this.receiver = messageObj.receiver;
             }
         }
     }
@@ -201,7 +208,7 @@ export default {
     p {
         padding: 20px;
         white-space: pre-line;
-        overflow: hidden;
+        overflow: auto;
         width: 100%
     }
   }
@@ -302,7 +309,7 @@ export default {
 .animatedPaper {
     display: flex;
     height: 100px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     background-color: #fdf3f4;
 
@@ -476,6 +483,24 @@ export default {
             top: 0;
             margin: 0 auto;
         }
+
+        @keyframes animatedTriangleDown {
+
+            from {
+                // border-left: 200px solid transparent;
+                // border-right: 200px solid transparent;
+                // border-top: 305px solid #bd5e68;
+            }
+
+            to {
+                border-top: 0px solid #bd5e68;
+                border-left: 230px solid transparent;
+                border-right: 230px solid transparent;
+                opacity: 0;
+            }
+
+    
+        }
 }
 
 
@@ -494,6 +519,24 @@ export default {
             top: 0;
             margin: 0 auto;
         }
+
+        @keyframes animatedTriangleDown {
+
+            from {
+                // border-left: 200px solid transparent;
+                // border-right: 200px solid transparent;
+                // border-top: 305px solid #bd5e68;
+            }
+
+            to {
+                border-top: 0px solid #bd5e68;
+                border-left: 200px solid transparent;
+                border-right: 200px solid transparent;
+                opacity: 0;
+            }
+
+    
+        }
 }
 
 @media (max-width: 460px) {
@@ -511,9 +554,28 @@ export default {
             top: 0;
             margin: 0 auto;
         }
+        
+        @keyframes animatedTriangleDown {
+
+            from {
+                // border-left: 200px solid transparent;
+                // border-right: 200px solid transparent;
+                // border-top: 305px solid #bd5e68;
+            }
+
+            to {
+                border-top: 0px solid #bd5e68;
+                border-left: 180px solid transparent;
+                border-right: 180px solid transparent;
+                opacity: 0;
+            }
+
+    
+        }
+        
 }
 
-@media (max-width: 460px) {
+@media (max-width: 400px) {
         .triangle-down {
             width: 0;
             height: 0;
@@ -527,6 +589,24 @@ export default {
             position: relative;
             top: 0;
             margin: 0 auto;
+        }
+
+        @keyframes animatedTriangleDown {
+
+            from {
+                // border-left: 200px solid transparent;
+                // border-right: 200px solid transparent;
+                // border-top: 305px solid #bd5e68;
+            }
+
+            to {
+                border-top: 0px solid #bd5e68;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+                opacity: 0;
+            }
+
+    
         }
 }
 
@@ -545,6 +625,24 @@ export default {
         top: 0;
         margin: 0 auto;
     }
+
+        @keyframes animatedTriangleDown {
+
+            from {
+                // border-left: 200px solid transparent;
+                // border-right: 200px solid transparent;
+                // border-top: 305px solid #bd5e68;
+            }
+
+            to {
+                border-top: 0px solid #bd5e68;
+                border-left: 145px solid transparent;
+                border-right: 145px solid transparent;
+                opacity: 0;
+            }
+
+    
+        }
 }
 
 @media (max-width: 320px) {
