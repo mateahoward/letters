@@ -10,8 +10,8 @@ This project was created for Valentine's Day 2022 and is available in English as
 4. View the letter
 5. Copy the URL and share with your loved one
 
-The letters you write are not saved in any database, the message and the recipeint data is encrypted and saved into the URL instead. </br>
-This makes it safer to share anything you wanted to share with your Valentine.
+The letters you write are not saved in any database, the message and the recipeint data is encrypted and saved into the URL instead.
+This makes it safer to share anything you wanted to share with your Valentine, without anyone else viewing the contents. 
 
 ------------------------------------
 
